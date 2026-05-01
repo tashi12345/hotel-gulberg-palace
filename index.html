@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Gulberg Palace | Luxury Redefined</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1 id="brand-name">Hotel Gulberg Palace</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rooms">Rooms & Suites</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#book" class="btn-primary">Book Now</a>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 id="hero-tagline">Experience Unmatched Luxury in the Heart of Lahore</h2>
+            <p id="hero-subtext">Discover elegance, comfort, and world-class hospitality at Hotel Gulberg Palace.</p>
+            <a href="#rooms" class="btn-primary btn-large">Explore Rooms</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h3 class="section-title">Welcome to Excellence</h3>
+            <p id="about-text">Hotel Gulberg Palace is an oasis of luxury located in the vibrant Gulberg district. Our palatial architecture combined with modern amenities ensures an unforgettable stay. Whether you are traveling for business or leisure, we provide the perfect blend of traditional hospitality and contemporary comfort.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=2000&auto=format&fit=crop" alt="Hotel Lobby">
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms-section">
+        <div class="section-header">
+            <h3 class="section-title">Our Premium Accommodations</h3>
+            <p>Select from our carefully curated luxury suites.</p>
+        </div>
+        <div class="rooms-grid" id="rooms-container">
+            <!-- Rooms will be dynamically loaded here by app.js -->
+        </div>
+    </section>
+
+    <section id="book" class="booking-section">
+        <div class="booking-container">
+            <h3>Reserve Your Stay</h3>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label>Check-in</label>
+                    <input type="date" required id="checkin">
+                </div>
+                <div class="form-group">
+                    <label>Check-out</label>
+                    <input type="date" required id="checkout">
+                </div>
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select id="guests">
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4+ Guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Room Type</label>
+                    <select id="room-type-select" required>
+                        <!-- Loaded dynamically -->
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary btn-block">Check Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2 id="footer-brand-name">Hotel Gulberg Palace</h2>
+                <p id="footer-address">Block K, 13 Ali Zaib Road, Gulberg III, Lahore, Punjab</p>
+            </div>
+            <div class="footer-contact">
+                <p>Phone: <span id="footer-phone">+92 42 111 222 333</span></p>
+                <p>Email: <span id="footer-email">reservations@gulbergpalace.com</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hotel Gulberg Palace. All Rights Reserved. Built by Gieek Software Solutions.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
